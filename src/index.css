@@ -1,1 +1,119 @@
 @import "tailwindcss";
+
+// custom variables
+@theme{
+  // colors
+  --color-neutral-900: #2B2620;
+  --color-neutral-800: #3E3428;
+  --color-neutral-700: #5A4C3C;
+  --color-neutral-600: #7A6A57;
+  --color-neutral-400: #E4DED5;
+  --color-neutral-200: #F2EEEA;
+  --color-neutral-100: #FBF6EF;
+  --color-neutral-50: #FDFBF7;
+  --color-white: #FFFFFF;
+  --color-sun-500: #EDB63A;
+  --color-sun-300: #F5D98A;
+  --color-sun-200: #FFDE7A;
+  --color-sun-50: #FFF4DC;
+  --color-blue-500: #5769C6;
+  --color-terracotta-700: #9F3E1D;
+  --color-terracotta-600: #B7411B;
+  --color-terracotta-500: #C25A2E;
+  --color-terracotta-400: #E07A3F;
+  --color-rose-500: #C04A72;
+
+  //fonts
+  --font-fraunces: 'Fraunces', serif;
+  --font-sans: 'DM Sans', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+
+  // spacing
+  --spacing-2: 2px; 
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-112: 112px;
+  --spacing-128: 128px;
+  --spacing-140: 140px;
+
+  // border radius
+  --radius-4: 4px;
+  --radius-6: 6px;
+  --radius-8: 8px;
+  --radius-10: 10px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-20: 20px;
+  --radius-24: 24px;
+  --radius-full: 999px;
+}
+
+// custom classes
+@layer base {
+  // text presets with fraunces font
+  .text-preset-1-regular{
+    @apply text-[2.5rem] leading-[120%] font-fraunces font-regular tracking-[-0.5px]; // Text Preset 1 regular
+  }
+  .text-preset-1-italic{
+    @apply text-[2.5rem] leading-[120%] font-fraunces font-italic tracking-[-0.5px]; // Text Preset 1 italic
+  }
+  .text-preset-2{
+    @apply text-[2rem] leading-[120%] font-fraunces font-regular tracking-[-0.25px]; // Text Preset 2 regular
+  }
+  .text-preset-3{
+    @apply text-[1.5rem] leading-[140%] font-fraunces font-regular tracking-[-0.2px]; // Text Preset 3 regular
+  }
+  .text-preset-4{
+    @apply text-[1.25rem] leading-[140%] font-fraunces font-italic tracking-[-0.1px]; // Text Preset 4 italic
+  }
+  .text-preset-11{
+    @apply text-[0.625rem] leading-[140%] font-fraunces font-medium tracking-[1px]; // Text Preset 11 medium
+  }
+
+  // text presets with sans font
+  .text-preset-5-medium{
+    @apply text-[0.875rem] leading-[120%] font-sans font-medium; // Text Preset 5 medium
+  }
+  .text-preset-5-semibold{
+    @apply text-[0.875rem] leading-[120%] font-sans font-semibold tracking-[0.3px]; // Text Preset 5 semibold
+  }
+  .text-preset-7{
+    @apply text-[0.75rem] leading-[120%] font-sans font-regular tracking-[0.4px]; // Text Preset 7 regular
+  }
+
+  // text presets with mono font
+  .text-preset-6{
+    @apply text-[0.875rem] leading-[140%] font-mono font-medium tracking-[2px]; // Text Preset 6 medium
+  }
+  .text-preset-8{
+    @apply text-[0.75rem] leading-[140%] font-mono font-regular tracking-[2px]; // Text Preset 8 regular
+  }
+  .text-preset-9{
+    @apply text-[0.75rem] leading-[140%] font-mono font-regular; // Text Preset 9 regular
+  }
+  .text-preset-10{
+    @apply text-[0.625rem] leading-[140%] font-mono font-regular tracking-[1px]; // Text Preset 10 regular
+  }
+}
+
+@layer components {
+  // button
+  
+}
+
+@layer utilities {
+  // custom utilities
+
+}
