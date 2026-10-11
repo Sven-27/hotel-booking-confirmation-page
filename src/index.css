@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 @import "tailwindcss";
 
-// custom variables
+/* custom variables */
 @theme{
-  // colors
+  /* colors */
   --color-neutral-900: #2B2620;
   --color-neutral-800: #3E3428;
   --color-neutral-700: #5A4C3C;
@@ -23,12 +24,12 @@
   --color-terracotta-400: #E07A3F;
   --color-rose-500: #C04A72;
 
-  //fonts
+  /* fonts */
   --font-fraunces: 'Fraunces', serif;
   --font-sans: 'DM Sans', sans-serif;
   --font-mono: 'DM Mono', monospace;
 
-  // spacing
+  /* spacing */
   --spacing-2: 2px; 
   --spacing-4: 4px;
   --spacing-6: 6px;
@@ -48,7 +49,7 @@
   --spacing-128: 128px;
   --spacing-140: 140px;
 
-  // border radius
+  /* border radius */
   --radius-4: 4px;
   --radius-6: 6px;
   --radius-8: 8px;
@@ -60,60 +61,59 @@
   --radius-full: 999px;
 }
 
-// custom classes
+/* custom classes */
 @layer base {
-  // text presets with fraunces font
+  /* text presets with fraunces font */
   .text-preset-1-regular{
-    @apply text-[2.5rem] leading-[120%] font-fraunces font-regular tracking-[-0.5px]; // Text Preset 1 regular
-  }
+    @apply text-[2.5rem] leading-[120%] font-fraunces font-normal tracking-[-0.5px]; /* Text Preset 1 normal */
+  },
   .text-preset-1-italic{
-    @apply text-[2.5rem] leading-[120%] font-fraunces font-italic tracking-[-0.5px]; // Text Preset 1 italic
-  }
+    @apply text-[2.5rem] leading-[120%] font-fraunces italic tracking-[-0.5px]; /* Text Preset 1 italic */
+  },
   .text-preset-2{
-    @apply text-[2rem] leading-[120%] font-fraunces font-regular tracking-[-0.25px]; // Text Preset 2 regular
+    @apply text-[2rem] leading-[120%] font-fraunces font-normal tracking-[-0.25px]; /* Text Preset 2 */
   }
   .text-preset-3{
-    @apply text-[1.5rem] leading-[140%] font-fraunces font-regular tracking-[-0.2px]; // Text Preset 3 regular
+    @apply text-[1.5rem] leading-[140%] font-fraunces font-normal tracking-[-0.2px]; /* Text Preset 3 */
   }
   .text-preset-4{
-    @apply text-[1.25rem] leading-[140%] font-fraunces font-italic tracking-[-0.1px]; // Text Preset 4 italic
+    @apply text-[1.25rem] leading-[140%] font-fraunces italic tracking-[-0.1px]; /* Text Preset 4 */
   }
   .text-preset-11{
-    @apply text-[0.625rem] leading-[140%] font-fraunces font-medium tracking-[1px]; // Text Preset 11 medium
+    @apply text-[0.625rem] leading-[140%] font-fraunces font-medium tracking-[1px]; /* Text Preset 11 medium */
   }
 
-  // text presets with sans font
+  /* text presets with sans font */
   .text-preset-5-medium{
-    @apply text-[0.875rem] leading-[120%] font-sans font-medium; // Text Preset 5 medium
+    @apply text-[0.875rem] leading-[120%] font-sans font-medium; /* Text Preset 5 medium */
   }
   .text-preset-5-semibold{
-    @apply text-[0.875rem] leading-[120%] font-sans font-semibold tracking-[0.3px]; // Text Preset 5 semibold
+    @apply text-[0.875rem] leading-[120%] font-sans font-semibold tracking-[0.3px]; /* Text Preset 5 semibold */
   }
   .text-preset-7{
-    @apply text-[0.75rem] leading-[120%] font-sans font-regular tracking-[0.4px]; // Text Preset 7 regular
+    @apply text-[0.75rem] leading-[120%] font-sans font-normal tracking-[0.4px]; /* Text Preset 7 normal */
   }
 
-  // text presets with mono font
+  /* text presets with mono font */
   .text-preset-6{
-    @apply text-[0.875rem] leading-[140%] font-mono font-medium tracking-[2px]; // Text Preset 6 medium
+    @apply text-[0.875rem] leading-[140%] font-mono font-medium tracking-[2px]; /* Text Preset 6 medium */
   }
   .text-preset-8{
-    @apply text-[0.75rem] leading-[140%] font-mono font-regular tracking-[2px]; // Text Preset 8 regular
+    @apply text-[0.75rem] leading-[140%] font-mono font-normal tracking-[2px]; /* Text Preset 8 normal */
   }
   .text-preset-9{
-    @apply text-[0.75rem] leading-[140%] font-mono font-regular; // Text Preset 9 regular
+    @apply text-[0.75rem] leading-[140%] font-mono font-normal; /* Text Preset 9 normal */
   }
   .text-preset-10{
-    @apply text-[0.625rem] leading-[140%] font-mono font-regular tracking-[1px]; // Text Preset 10 regular
+    @apply text-[0.625rem] leading-[140%] font-mono font-normal tracking-[1px]; /* Text Preset 10 normal */
   }
 }
 
 @layer components {
-  // button
-  
+  /* button */
+ 
 }
 
 @layer utilities {
-  // custom utilities
-
-}
+  /* custom utility classes */
+} 
