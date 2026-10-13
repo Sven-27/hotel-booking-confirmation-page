@@ -119,7 +119,7 @@
 @layer components {
   /* button */
  .button{
-  @apply flex-[.5] rounded-[var(--radius-full)]  border border-solid border-neutral-400 border-[1px] py-[var(--spacing-10)] px-[var(--spacing-16)];
+  @apply flex-[.5] sm:flex-[unset] rounded-[var(--radius-full)]  border border-solid border-neutral-400 border-[1px] py-[var(--spacing-10)] px-[var(--spacing-16)];
  }
 }
 
