@@ -1,10 +1,9 @@
-
+import ConfirmationHeader from './ConfirmationHeader';
 
 const Confirmation: React.FC = () => {
   return (
-    <div>
-      <h1>Booking Confirmed</h1>
-      <p>Your booking has been confirmed.</p>
+    <div className="pt-[20px] px-[16px]">
+      <ConfirmationHeader />
     </div>
   );
 };

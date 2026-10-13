@@ -29,6 +29,13 @@
   --font-sans: 'DM Sans', sans-serif;
   --font-mono: 'DM Mono', monospace;
 
+  /* font weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
   /* spacing */
   --spacing-2: 2px; 
   --spacing-4: 4px;
@@ -64,7 +71,7 @@
 /* custom classes */
 @layer base {
   /* text presets with fraunces font */
-  .text-preset-1-regular{
+  .text-preset-1-normal{
     @apply text-[2.5rem] leading-[120%] font-fraunces font-normal tracking-[-0.5px]; /* Text Preset 1 normal */
   },
   .text-preset-1-italic{
@@ -111,7 +118,9 @@
 
 @layer components {
   /* button */
- 
+ .button{
+  @apply flex-[.5] rounded-[var(--radius-full)]  border border-solid border-neutral-400 border-[1px] py-[var(--spacing-10)] px-[var(--spacing-16)];
+ }
 }
 
 @layer utilities {

@@ -2,7 +2,7 @@ import Confirmation from './components/confirmation/Confirmation';
 
 const app = () => {
   return (
-    <div>
+    <div >
       <Confirmation />
     </div>
   )
