@@ -1,4 +1,4 @@
-
+import ActiveButtons from './ActiveButtons';
 
 const ConfirmationHeader: React.FC = () => {
   return (
@@ -7,6 +7,7 @@ const ConfirmationHeader: React.FC = () => {
         <p><small>Booking · Confirmed</small></p>
         <h1>Bienvenue, <span>Lucia</span>.</h1>
       </div>
+      <ActiveButtons />
     </section>
   )
 }
