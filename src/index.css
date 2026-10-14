@@ -121,6 +121,10 @@
  .button{
   @apply flex-[.5] sm:flex-[unset] rounded-[var(--radius-full)]  border border-solid border-neutral-400 border-[1px] py-[var(--spacing-10)] px-[var(--spacing-16)];
  }
+
+ .card{
+  @apply w-full sm:w-[340px] xl:w-[400px] shadow-xl ;
+ }
 }
 
 @layer utilities {
