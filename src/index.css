@@ -84,7 +84,7 @@
     @apply text-[1.5rem] leading-[140%] font-fraunces font-normal tracking-[-0.2px]; /* Text Preset 3 */
   }
   .text-preset-4{
-    @apply text-[1.25rem] leading-[140%] font-fraunces italic tracking-[-0.1px]; /* Text Preset 4 */
+    @apply text-[1.25rem] leading-[140%] font-fraunces tracking-[-0.1px]; /* Text Preset 4 */
   }
   .text-preset-11{
     @apply text-[0.625rem] leading-[140%] font-fraunces font-medium tracking-[1px]; /* Text Preset 11 medium */
