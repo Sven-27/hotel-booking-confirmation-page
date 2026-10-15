@@ -73,10 +73,10 @@
   /* text presets with fraunces font */
   .text-preset-1-normal{
     @apply text-[2.5rem] leading-[120%] font-fraunces font-normal tracking-[-0.5px]; /* Text Preset 1 normal */
-  },
+  }
   .text-preset-1-italic{
     @apply text-[2.5rem] leading-[120%] font-fraunces italic tracking-[-0.5px]; /* Text Preset 1 italic */
-  },
+  }
   .text-preset-2{
     @apply text-[2rem] leading-[120%] font-fraunces font-normal tracking-[-0.25px]; /* Text Preset 2 */
   }
