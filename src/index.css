@@ -123,7 +123,7 @@
  }
 
  .card{
-  @apply w-full sm:w-[340px] xl:w-[400px] shadow-xl ;
+  @apply w-[327px] sm:w-[340px] xl:w-[400px] h-[420px] shadow-xl p-20 rounded-xl;
  }
 }
 

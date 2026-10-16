@@ -2,7 +2,7 @@
 
 const ReceiptCard: React.FC = () => {
   return (
-    <div className="card bg-white p-20 rounded-xl rotate-[-2deg]">
+    <div className="card bg-white rotate-[-2deg]">
       <div className="flex pb-8">
         <p className="w-full flex flex-col">
           <small className="text-preset-10 text-neutral-600 uppercase">
