@@ -138,6 +138,6 @@
   }
 
   .sun{
-    @apply transition-all duration-500 ease-in-out after:hidden after:content-[url('src/assets/images/illustration-sun.svg')] after:absolute after:z-[-1] hover:after:block;
+    @apply transition-all duration-1000 ease-in-out after:opacity-0 lg:after:content-[url('src/assets/images/illustration-sun.svg')] after:absolute lg:after:z-[-1] lg:hover:after:opacity-100;
   }
 } 
