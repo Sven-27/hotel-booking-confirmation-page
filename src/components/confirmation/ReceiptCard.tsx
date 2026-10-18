@@ -2,7 +2,7 @@
 
 const ReceiptCard: React.FC = () => {
   return (
-    <div className="card bg-white rotate-[-2deg]">
+    <div className="card bg-white rotate-[-4deg] animate-fan lg:group-hover:mr-[82px] lg:group-hover:rotate-[4deg]">
       <div className="flex pb-8">
         <p className="w-full flex flex-col">
           <small className="text-preset-10 text-neutral-600 uppercase">
@@ -28,15 +28,15 @@ const ReceiptCard: React.FC = () => {
         </div>
       </div>
       <div className="py-12 border-b-1 border-neutral-600">
-        <p className="flex items-center justify-between text-preset-5-medium text-neutral-900 pb-10">
+        <p className="flex items-center justify-between text-preset-5-normal text-neutral-900 pb-10">
           Room · La Garrigue · 4 nights
           <data value="620.00" className="text-preset-9">&euro;&nbsp;620.00</data>
         </p>
-        <p className="flex items-center justify-between text-preset-5-medium text-neutral-900 pb-10">
+        <p className="flex items-center justify-between text-preset-5-normal text-neutral-900 pb-10">
           Breakfast · 2 guests
           <data value="96.00" className="text-preset-9">&euro;&nbsp;96.00</data>
         </p>
-        <p className="flex items-center justify-between text-preset-5-medium text-neutral-900 pb-10">
+        <p className="flex items-center justify-between text-preset-5-normal text-neutral-900 pb-10">
           Tourist tax
           <data value="14.40" className="text-preset-9">&euro;&nbsp;14.40</data>
         </p>

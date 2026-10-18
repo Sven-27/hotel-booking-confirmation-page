@@ -91,8 +91,8 @@
   }
 
   /* text presets with sans font */
-  .text-preset-5-medium{
-    @apply text-[0.875rem] leading-[120%] font-sans font-medium; /* Text Preset 5 medium */
+  .text-preset-5-normal{
+    @apply text-[0.875rem] leading-[120%] font-sans font-normal; /* Text Preset 5 medium */
   }
   .text-preset-5-semibold{
     @apply text-[0.875rem] leading-[120%] font-sans font-semibold tracking-[0.3px]; /* Text Preset 5 semibold */
@@ -129,4 +129,15 @@
 
 @layer utilities {
   /* custom utility classes */
+  .animate-fan{
+    @apply transition-all duration-500 ease-in-out;
+  }
+
+  .red-star{
+    @apply after:content-[url('src/assets/images/icon-sparkle.svg')] before:content-[url('src/assets/images/icon-sparkle.svg')]; 
+  }
+
+  .sun{
+    @apply transition-all duration-500 ease-in-out after:hidden after:content-[url('src/assets/images/illustration-sun.svg')] after:absolute after:z-[-1] hover:after:block;
+  }
 } 
