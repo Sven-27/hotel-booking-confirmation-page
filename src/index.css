@@ -140,4 +140,8 @@
   .sun{
     @apply lg:transition-all lg:duration-1000 lg:ease-in-out lg:after:opacity-0 lg:after:content-[url('src/assets/images/illustration-sun.svg')] lg:after:absolute lg:after:z-[-1] lg:hover:after:opacity-100;
   }
+
+  .active-state{
+    @apply focus:outline-2 focus:outline-solid focus:outline-offset-2 focus:outline-terracotta-700 active:outline-2 active:outline-solid active:outline-offset-2 active:outline-terracotta-700;
+  }
 } 
