@@ -26,7 +26,7 @@ const Bottomcards: React.FC = () => {
                 <img src={ArrivalIcon} alt="Arrival" />
               </span>
               
-              <div style={{ width: '260.67px', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginLeft: '16px' }}>
+              <div style={{ width: '260.67px', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginLeft: '16px' }}>
                 <div className="text-terracotta-600 uppercase text-preset-6" >Arrival</div>
                 <div className="text-terracotta-600 uppercase text-preset-3" >01</div>
               </div>
@@ -58,7 +58,7 @@ const Bottomcards: React.FC = () => {
                 <img src={WifiIcon} alt="WIFI" />
               </span>
               
-              <div style={{ width: '260.67px', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginLeft: '16px' }}>
+              <div style={{ width: '260.67px', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginLeft: '16px' }}>
                 <div className="text-blue-500 uppercase text-preset-6" >WIFI</div>
                 <div className="text-blue-500 uppercase text-preset-3">02</div>
               </div>
@@ -109,7 +109,7 @@ const Bottomcards: React.FC = () => {
                 <img src={BreakfastIcon} alt="Breakfast" />
               </span>
               
-              <div style={{ width: '260.67px', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginLeft: '16px' }}>
+              <div style={{ width: '260.67px', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginLeft: '16px' }}>
                 <div className="text-rose-500 uppercase text-preset-6" >Breakfast</div>
                 <div className="text-rose-500 uppercase text-preset-3">03</div>
               </div>
