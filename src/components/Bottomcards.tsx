@@ -41,7 +41,7 @@ const Bottomcards: React.FC = () => {
               </div>
             </div>
             <div id="instructions">
-                Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
+                Please ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
             </div>
 
           </div>
