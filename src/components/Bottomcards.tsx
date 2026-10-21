@@ -16,7 +16,7 @@ const Bottomcards: React.FC = () => {
   return (
     <div style={{ display: 'flex', justifyContent: 'center' }}>
 
-      <div style={{ width: '1100px', height: '252px', marginTop: '40px', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
+      <div style={{ width: '1100px', height: '252px', marginTop: '40px', paddingTop: '32px', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
         
         <div className="bg-neutral-50" style={{ borderRadius: '16px', border: '1px solid var(--fill-neutral-400)', width: '350.67px', padding: '24px 20px'}}>
 
