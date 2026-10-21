@@ -66,6 +66,17 @@
   --radius-20: 20px;
   --radius-24: 24px;
   --radius-full: 999px;
+
+  /* fill colors */
+  --fill-neutral-900: #2B2620;
+  --fill-neutral-800: #3E3428;
+  --fill-neutral-700: #5A4C3C;
+  --fill-neutral-600: #7A6A57;
+  --fill-neutral-400: #E4DED5;
+  --fill-neutral-200: #F2EEEA;
+  --fill-neutral-100: #FBF6EF;
+  --fill-neutral-50: #FDFBF7;
+
 }
 
 /* custom classes */
