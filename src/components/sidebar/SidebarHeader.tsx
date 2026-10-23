@@ -13,7 +13,7 @@ export default function SidebarHeader({ onClose }: SidebarHeaderProps): React.JS
     return (
         /* 1. Added custom ambient drop shadow with a soft blur factor */
         /* 2. Added "mb-4" to inject clean vertical separation spacing right below the divider line */
-        <header className="w-full flex flex-row items-center justify-between px-6 pt-4 pb-4 bg-[#FDFBF7] border-b border-neutral-200/40 shadow-[0_4px_12px_-2px_rgba(167,146,223,0.04),0_2px_4px_-1px_rgba(0,0,0,0.03)] mb-4">
+        <header className="w-full flex flex-row items-center justify-between px-6 pt-4 pb-4 bg-neutral-50 border-b border-neutral-200/40 shadow-[0_4px_12px_-2px_rgba(167,146,223,0.04),0_2px_4px_-1px_rgba(0,0,0,0.03)] mb-4">
             {/* Brand Identity / Logo Area */}
             <div className="flex items-center space-x-2">
                 {/* Sun Icon */}
@@ -27,7 +27,7 @@ export default function SidebarHeader({ onClose }: SidebarHeaderProps): React.JS
 
                 {/* Stacked Word Mark Column */}
                 <div className="flex flex-col -space-y-1">
-                    <span className="text-preset-4 italic text-[#D35A3A]">
+                    <span className="text-preset-4 italic text-terracotta-600">
                         Maison
                     </span>
                     <span className="text-preset-5 font-semibold text-neutral-900">

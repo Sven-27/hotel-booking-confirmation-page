@@ -31,16 +31,9 @@ export default function Sidebar({ isMobileOpen, onClose }: SidebarProps): React.
       {/* MASTER SIDEBAR WRAPPER PANEL */}
       <aside
         className={`
-          /* Core structural layout properties */
-          w-[320px] sm:w-[384px] bg-[#FDFBF7] border-r border-neutral-200/50 flex flex-col min-h-screen shrink-0
-          
-          /* Mobile Drawer Position Rules: Slides out via CSS Transform styles */
-          fixed inset-y-0 left-0 z-50 transform transition-transform duration-300 ease-in-out
-          
-          /* Responsive Adaptive Toggles: Locks panel inline statically on desktop views */
-          md:relative md:transform-none md:z-auto
-          
-          /* Active Conditional State Trigger Rule */
+                  w-[320px] sm:w-[384px] bg-neutral-100 border-r border-neutral-200/50 flex flex-col min-h-screen shrink-0
+         fixed inset-y-0 left-0 z-50 transform transition-transform duration-300 ease-in-out
+         md:relative md:transform-none md:z-auto
           ${isMobileOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}
         `}
       >
@@ -53,7 +46,7 @@ export default function Sidebar({ isMobileOpen, onClose }: SidebarProps): React.
           {/* HARDCODED NAVIGATION MENU: Stripped of NavItem for fast Figma SVG implementation */}
           {/* DYNAMIC NAVIGATION MENU */}
           {/* DYNAMIC NAVIGATION MENU */}
-          <nav className="space-y-1.5">
+          <nav className="spacing-2">
 
             {/* Item 1: Your Stay */}
             <button
@@ -63,15 +56,15 @@ export default function Sidebar({ isMobileOpen, onClose }: SidebarProps): React.
                 if (isMobileOpen) onClose();
               }}
               className={`w-full flex items-center justify-between px-4 py-3 rounded-xl transition-colors select-none focus:outline-none border ${activeTab === 'your-stay'
-                ? 'bg-white text-[#2b2620] font-medium shadow-xs border-neutral-100'
-                : 'text-[#2b2620]/70 hover:bg-neutral-50 border-transparent'
+                ? 'bg-white text-preset-5-medium font-medium shadow-xs border-neutral-100'
+                : 'text-preset-5-medium/70 hover:bg-neutral-50 border-transparent'
                 }`}
             >
               <div className="flex items-center gap-3.5">
                 <img src={stayIconUrl} alt="" className="w-5 h-5 object-contain color-neutral-900" />
-                <span className={`${activeTab === 'your-stay' ? 'text-preset-5(medium)' : 'text-sm font-normal'}`}>Your stay</span>
+                <span className={`${activeTab === 'your-stay' ? 'text-preset-5(medium)' : 'text-preset-5(medium)'}`}>Your stay</span>
               </div>
-              <span className="w-4 h-4 rounded-full bg-[#C06038] text-white text-[10px] flex items-center justify-center font-bold">1</span>
+              <span className="w-4 h-4 rounded-full bg-terracotta-400 text-white text-[10px] flex items-center justify-center font-bold">1</span>
             </button>
 
             {/* Item 2: The House */}
@@ -82,8 +75,8 @@ export default function Sidebar({ isMobileOpen, onClose }: SidebarProps): React.
                 if (isMobileOpen) onClose();
               }}
               className={`w-full flex items-center gap-3.5 px-4 py-3 rounded-xl transition-colors select-none focus:outline-none border ${activeTab === 'the-house'
-                ? 'bg-white text-[#2b2620] font-medium shadow-xs border-neutral-100'
-                : 'text-[#2b2620]/70 hover:bg-neutral-50 border-transparent'
+                ? 'bg-white text-neutral-700 font-medium shadow-xs border-neutral-100'
+                : 'text-neutral-700/70 hover:bg-neutral-50 border-transparent'
                 }`}
             >
               <img src={houseIconUrl} alt="" className="w-5 h-5 object-contain color-neutral-700" />
@@ -98,8 +91,8 @@ export default function Sidebar({ isMobileOpen, onClose }: SidebarProps): React.
                 if (isMobileOpen) onClose();
               }}
               className={`w-full flex items-center gap-3.5 px-4 py-3 rounded-xl transition-colors select-none focus:outline-none border ${activeTab === 'around-town'
-                ? 'bg-white text-[#2b2620] font-medium shadow-xs border-neutral-100'
-                : 'text-[#2b2620]/70 hover:bg-neutral-50 border-transparent'
+                ? 'bg-white text-neutral-900 font-medium shadow-xs border-neutral-100'
+                : 'text-neutral-900/70 hover:bg-neutral-50 border-transparent'
                 }`}
             >
               <img src={townIconUrl} alt="" className="w-5 h-5 object-contain color-neutral-700" />
@@ -114,8 +107,8 @@ export default function Sidebar({ isMobileOpen, onClose }: SidebarProps): React.
                 if (isMobileOpen) onClose();
               }}
               className={`w-full flex items-center gap-3.5 px-4 py-3 rounded-xl transition-colors select-none focus:outline-none border ${activeTab === 'breakfast'
-                ? 'bg-white text-[#2b2620] font-medium shadow-xs border-neutral-100'
-                : 'text-[#2b2620]/70 hover:bg-neutral-50 border-transparent'
+                ? 'bg-white text-neutral-900 font-medium shadow-xs border-neutral-100'
+                : 'text-neutral-900/70 hover:bg-neutral-50 border-transparent'
                 }`}
             >
               <img src={breakfastIconUrl} alt="" className="w-5 h-5 object-contain color-neutral-700" />
@@ -130,18 +123,14 @@ export default function Sidebar({ isMobileOpen, onClose }: SidebarProps): React.
                 if (isMobileOpen) onClose();
               }}
               className={`w-full flex items-center gap-3.5 px-4 py-3 rounded-xl transition-colors select-none focus:outline-none border ${activeTab === 'messages'
-                ? 'bg-white text-[#2b2620] font-medium shadow-xs border-neutral-100'
-                : 'text-[#2b2620]/70 hover:bg-neutral-50 border-transparent'
+                ? 'bg-white text-neutral-900 font-medium shadow-xs border-neutral-100'
+                : 'text-neutral-900/70 hover:bg-neutral-50 border-transparent'
                 }`}
             >
               <img src={messagesIconUrl} alt="" className="w-5 h-5 object-contain color-neutral-700" />
               <span className={`${activeTab === 'messages' ? 'text-preset-5(medium)' : 'text-sm font-normal'}`}>Messages</span>
             </button>
-
           </nav>
-
-
-
           <div className="space-y-6 mt-auto">
             <WeatherCard />
             <SidebarFooter />
