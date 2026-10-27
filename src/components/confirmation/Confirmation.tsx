@@ -1,6 +1,7 @@
 import ConfirmationHeader from './ConfirmationHeader';
 import ReceiptCard from './ReceiptCard';
 import WelcomeCard from './WelcomeCard';
+import Bottomcards from '../Bottomcards';
 
 const Confirmation: React.FC = () => {
   return (
@@ -12,7 +13,9 @@ const Confirmation: React.FC = () => {
         <small className="red-star absolute bottom-[-30px] uppercase text-preset-10 text-neutral-600 flex items-center gap-[12px]">
           Hover to fan
         </small>
+        
       </main>
+      
     </div>
   );
 };
