@@ -29,6 +29,13 @@
   --font-sans: 'DM Sans', sans-serif;
   --font-mono: 'DM Mono', monospace;
 
+  /* font weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
   /* spacing */
   --spacing-2: 2px;
   --spacing-4: 4px;
@@ -65,29 +72,22 @@
 @layer base {
 
   /* text presets with fraunces font */
-  .text-preset-1-regular {
-    @apply text-[2.5rem] leading-[120%] font-fraunces font-normal tracking-[-0.5px];
-    /* Text Preset 1 normal */
+  .text-preset-1-normal{
+    @apply text-[2.5rem] leading-[120%] font-fraunces font-normal tracking-[-0.5px]; /* Text Preset 1 normal */
   }
-
-  .text-preset-1-italic {
-    @apply text-[2.5rem] leading-[120%] font-fraunces italic tracking-[-0.5px];
-    /* Text Preset 1 italic */
+  .text-preset-1-italic{
+    @apply text-[2.5rem] leading-[120%] font-fraunces italic tracking-[-0.5px]; /* Text Preset 1 italic */
   }
-
-  .text-preset-2 {
-    @apply text-[2rem] leading-[120%] font-fraunces font-normal tracking-[-0.25px];
-    /* Text Preset 2 */
+  .text-preset-2{
+    @apply text-[2rem] leading-[120%] font-fraunces font-normal tracking-[-0.25px]; /* Text Preset 2 */
   }
 
   .text-preset-3 {
     @apply text-[1.5rem] leading-[140%] font-fraunces font-normal tracking-[-0.2px];
     /* Text Preset 3 */
   }
-
-  .text-preset-4 {
-    @apply text-[1.25rem] leading-[140%] font-fraunces italic tracking-[-0.1px];
-    /* Text Preset 4 */
+  .text-preset-4{
+    @apply text-[1.25rem] leading-[140%] font-fraunces tracking-[-0.1px]; /* Text Preset 4 */
   }
 
   .text-preset-11 {
@@ -96,9 +96,8 @@
   }
 
   /* text presets with sans font */
-  .text-preset-5-medium {
-    @apply text-[0.875rem] leading-[120%] font-sans font-medium;
-    /* Text Preset 5 medium */
+  .text-preset-5-normal{
+    @apply text-[0.875rem] leading-[120%] font-sans font-normal; /* Text Preset 5 medium */
   }
 
   .text-preset-5-semibold {
@@ -135,9 +134,30 @@
 
 @layer components {
   /* button */
+ .button{
+  @apply flex-[.5] sm:flex-[unset] rounded-[var(--radius-full)] py-[var(--spacing-10)] px-[var(--spacing-16)] cursor-pointer transition-all duration-500 ease-in-out;
+ }
 
+ .card{
+  @apply w-[327px] sm:w-[340px] xl:w-[400px] h-[420px] shadow-xl p-20 rounded-xl;
+ }
 }
 
 @layer utilities {
   /* custom utility classes */
-}
+  .animate-fan{
+    @apply transition-all duration-500 ease-in-out;
+  }
+
+  .red-star{
+    @apply after:content-[url('src/assets/images/icon-sparkle.svg')] before:content-[url('src/assets/images/icon-sparkle.svg')] hidden xl:block; 
+  }
+
+  .sun{
+    @apply lg:transition-all lg:duration-1000 lg:ease-in-out lg:after:opacity-0 lg:after:content-[url('src/assets/images/illustration-sun.svg')] lg:after:absolute lg:after:z-[-1] lg:hover:after:opacity-100;
+  }
+
+  .active-state{
+    @apply focus:outline-2 focus:outline-solid focus:outline-offset-2 focus:outline-terracotta-700 active:outline-2 active:outline-solid active:outline-offset-2 active:outline-terracotta-700;
+  }
+} 
