@@ -2,7 +2,7 @@ import type React from 'react';
 
 export default function WeatherCard(): React.JSX.Element {
   return (
-    <div className="relative overflow-hidden bg-[#FCE89D] rounded-2xl pt-3 pb-3.5 px-4 text-[#5C4E43]">
+    <div className="relative overflow-hidden bg-[#FCE89D] rounded-2xl px-[16px] py-[12px] text-[#5C4E43]">
       {/* Decorative Sun Shape with Shaded Border & Bright Center Glow */}
       {/* <div
         className="absolute -right-[20px] -top-[20px] w-[80px] h-[80px] rounded-full shadow-[inset_-2px_-4px_8px_rgba(220,110,0,0.15)]"
@@ -35,7 +35,7 @@ export default function WeatherCard(): React.JSX.Element {
           <span className="text-[20px] font-light leading-none pt-0.5 pl-0.5">°</span>
         </h3> */}
       <div>
-        <span className="text-preset-2 text-neutral-900" > 27°
+        <span className="text-preset-2 text-neutral-900 my-[16px]" > 27°
         </span>
       </div>
       <div>
