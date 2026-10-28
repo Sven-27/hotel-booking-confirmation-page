@@ -21,7 +21,7 @@ export default function NavItem({
     <button
       onClick={onClick} //  Attaches the click handler to your HTML button
       type="button"
-      className={`w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-200 text-sm font-medium
+      className={`w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-200 text-preset-5-normal
         ${isActive
           ? 'bg-neutral-800 text-white'
           : 'bg-transparent text-gray-700 hover:bg-neutral-100 hover:text-neutral-900'

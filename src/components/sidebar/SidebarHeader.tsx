@@ -13,13 +13,13 @@ export default function SidebarHeader({ onClose }: SidebarHeaderProps): React.JS
     return (
         /* 1. Added custom ambient drop shadow with a soft blur factor */
         /* 2. Added "mb-4" to inject clean vertical separation spacing right below the divider line */
-        <header className="w-full flex flex-row items-center justify-between px-6 pt-4 pb-4 bg-neutral-50 border-b border-neutral-200/40 shadow-[0_4px_12px_-2px_rgba(167,146,223,0.04),0_2px_4px_-1px_rgba(0,0,0,0.03)] mb-4">
+        <header className="w-[336] flex flex-row items-center justify-between px-6 pt-4 pb-4 bg-neutral-50 border-b border-neutral-200/40 shadow-[0_4px_12px_-2px_rgba(167,146,223,0.04),0_2px_4px_-1px_rgba(0,0,0,0.03)] mb-4">
             {/* Brand Identity / Logo Area */}
             <div className="flex items-center space-x-2">
                 {/* Sun Icon */}
                 <div className="flex items-center justify-center w-[34px] h-[34px] border border-[#A792DF]/30 rounded p-1 bg-white shrink-0">
                     <img
-                        className="w-full h-full object-contain select-none pointer-events-none"
+                        className="w-[106.92] h-[42] object-contain select-none pointer-events-none"
                         src={sunLogoUrl} // CHANGED: Replaced static text string with resolved URL module
                         alt="icon of a sun"
                     />
@@ -41,7 +41,7 @@ export default function SidebarHeader({ onClose }: SidebarHeaderProps): React.JS
                 type="button"
                 onClick={onClose} // ADDED: Directly calls your mobile close state function handler
                 /* CHANGED: Swapped md:hidden to lg:hidden so it stays visible on tablets */
-                className="relative flex items-center justify-center w-8 h-8 rounded-lg border border-neutral-200/60 bg-white text-neutral-700 hover:bg-neutral-50 transition-colors shrink-0 lg:hidden"
+                className="relative flex items-center justify-center w-8 h-8 rounded-lg border border-neutral-200/60 bg-white text-neutral-700 hover:bg-white transition-colors shrink-0 lg:hidden"
                 aria-label="Close menu"
             >
                 <img
@@ -51,5 +51,6 @@ export default function SidebarHeader({ onClose }: SidebarHeaderProps): React.JS
                 />
             </button>
         </header>
+
     );
 }
