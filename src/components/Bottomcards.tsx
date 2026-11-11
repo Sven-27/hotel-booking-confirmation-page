@@ -103,7 +103,7 @@ function Bottomcards() {
       </article>
 
       <article className="min-w-0 rounded-2xl border border-slate-200 bg-neutral-50 py-20 px-24 shadow-sm">
-        <div id="card3" className="bg-neutral-50 bottomcard" >
+        <div id="card3" className="bg-neutral-50" >
           
           <div className="flex flex-row justify-between items-center">
             
