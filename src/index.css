@@ -127,9 +127,6 @@
   @apply w-[327px] sm:w-[340px] xl:w-[400px] h-[420px] shadow-xl p-20 rounded-xl;
  }
 
- .bottomcard{
-  @apply w-[357px] sm:w-[360px] xl:w-[420px] shadow-xl p-20 rounded-xl ;
- }
 }
 
 @layer utilities {

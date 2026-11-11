@@ -1,43 +1,34 @@
 ////
-import React from 'react';
 // import svg files
 import ArrivalIcon from '../assets/images/icon-key.svg';
 import WifiIcon from '../assets/images/icon-wifi.svg';
-import BreakfastIcon from '../assets/images/icon-breakfast.svg';    
+import BreakfastIcon from '../assets/images/icon-breakfast.svg'; 
+////
 
-
-const Bottomcards: React.FC = () => {
-  ////
-  
-  //// maxWidth: '1100px', height: '252px',
-  //// width: '350.67px', 
-
-
-  ////
+function Bottomcards() {
   return (
-    // <div style={{ display: 'flex', justifyContent: 'center' }}>
-    <div className="pt-[20px] px-[16px] xl:px-[var(--spacing-40)] xl:pt-[var(--spacing-32)]" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }} >
+    <section
+      aria-label="Information cards"
+      className="mx-auto grid w-full max-w-5xl grid-cols-[repeat(auto-fit,minmax(min(100%,18rem),1fr))] gap-24 px-24 mt-40"
+    >
+      <article className="min-w-0 rounded-2xl border border-slate-200 bg-neutral-50 py-20 px-24 shadow-sm">
+        <div id="card1" className="bg-neutral-50" >
 
-      <div style={{ maxWidth: '1300px', marginBottom: '40px', paddingTop: '32px', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '16px' }}>
-        
-        <div id="card1" className="bg-neutral-50 bottomcard" style={{ display: 'flex', flexDirection: 'column', borderRadius: '16px', border: '1px solid var(--color-neutral-400)'}}>
-
-          <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
-              <span className="bg-terracotta-600" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '8px', width: '40px', height: '40px', marginRight: '8px' }}>
+          <div className="flex flex-row justify-between items-center">
+            <div className="flex flex-row items-center">
+              <span className="bg-terracotta-600 flex justify-center items-center rounded-lg w-40 h-40 mr-2">
                 <img src={ArrivalIcon} alt="Arrival" />
               </span>
-              <div className="text-terracotta-600 uppercase text-preset-6" >Arrival</div>
+              <div className="text-terracotta-600 uppercase text-preset-6 pl-10" >Arrival</div>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginLeft: '16px' }}>
-              
+            <div className="flex flex-row justify-between items-center ml-4">
               <div className="text-terracotta-600 uppercase text-preset-3" >01</div>
             </div>
               
           </div>
 
-          <div id="card-details1" style={{ marginTop: '24px' }}>
+          <div id="card-details1" className="mt-24">
             <div>
               <div id="check-in-info" className="text-neutral-900 text-preset-3">
                 Check-in from 15:00
@@ -46,31 +37,33 @@ const Bottomcards: React.FC = () => {
                 Sat, 25 April
               </small>
             </div>
-            <p id="instructions" className="text-neutral-700 text-preset-5" style={{ marginTop: '16px' }}>
+            <p id="instructions" className="text-neutral-700 text-preset-5 mt-16" >
                 Please ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
             </p>
 
           </div>
-          
+                 
         </div>
+      </article>
 
-        <div id="card2" className="bg-neutral-50 bottomcard" style={{ display: 'flex', flexDirection: 'column', borderRadius: '16px', border: '1px solid var(--color-neutral-400)'}}>
+      <article className="min-w-0 rounded-2xl border border-slate-200 bg-neutral-50 py-20 px-24 shadow-sm">
+        <div id="card2" className="bg-neutral-50" >
 
-          <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
-              <span className="bg-blue-500" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '8px', width: '40px', height: '40px', marginRight: '8px'}}>
+          <div className="flex flex-row justify-between items-center">
+            <div className="flex flex-row items-center">
+              <span className="bg-blue-500 flex justify-center items-center rounded-lg w-40 h-40 mr-2" >
                 <img src={WifiIcon} alt="WIFI" />
               </span>
-              <div className="text-blue-500 uppercase text-preset-6" >WIFI</div>
+              <div className="text-blue-500 uppercase text-preset-6 pl-10" >WIFI</div>
             </div>
-            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginLeft: '16px' }}>
-              
+
+            <div className="flex flex-row justify-between items-center ml-4">
               <div className="text-blue-500 uppercase text-preset-3">02</div>
             </div>
+
           </div>
           
-
-          <div id="details2" style={{ marginTop: '24px' }}>
+          <div id="card-details2" className="mt-24">
             <div>
               <div id="wifi-info" className="text-neutral-900 text-preset-3" >
                 Le Soleil · Guest
@@ -79,24 +72,24 @@ const Bottomcards: React.FC = () => {
                 Password below
               </small>
             </div>
-            <div id="wifi-instructions" style={{ marginTop: '16px' }}>
+            <div id="wifi-instructions" className="mt-16">
             
-              <div id="wifi-info" style={{ marginTop: '16px', padding: '10px', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', backgroundColor: 'var(--color-neutral-200)', borderRadius: '8px' }}>
+              <div id="wifi-info" className="mt-4 p-10 flex flex-row justify-between items-center bg-neutral-200 rounded-lg">
                  <div className="text-neutral-600 uppercase text-preset-8">Network</div>
                  <div className="text-neutral-900 text-preset-7">Le Soleil · Guest</div>
               </div>
-              <div id="pw-below" 
-                style={{ padding: '10px', marginTop: '8px', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', backgroundColor: 'var(--color-neutral-200)', borderRadius: '8px' }}>
+              <div id="pw-below" className="mt-2 p-10 flex flex-row justify-between items-center bg-neutral-200 rounded-lg">
                 <div className="text-neutral-600 uppercase text-preset-8">Password</div>
-                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div className="flex flex-row justify-between items-center">
                   <div className="text-neutral-900 text-preset-7">soleil-2026</div>
-                  <div style={{ marginLeft: '10px', borderRadius: '8px', backgroundColor: 'var(--color-neutral-400)', alignItems: 'center', display: 'flex' }}>
+                  <div className="ml-2 rounded-lg bg-neutral-400 flex items-center">
                     <button 
                       onClick={() => navigator.clipboard.writeText('soleil-2026')} 
                       className="text-neutral-600 uppercase text-preset-10 bg-neutral-200 
                       border border-neutral-400 
-                      hover:bg-neutral-400 focus-visible:border-terracotta-600 focus-visible:outline-none" 
-                      style={{ padding: '4px 8px 2px 8px', borderRadius: '8px', cursor: 'pointer' }}>
+                      hover:bg-neutral-400 focus-visible:border-terracotta-600 focus-visible:outline-none 
+                      p-1.5 rounded-lg cursor-pointer"
+                      >
                         Copy
                     </button>
                   </div>
@@ -107,26 +100,27 @@ const Bottomcards: React.FC = () => {
           </div>
 
         </div>
+      </article>
 
-        <div id="card3" className="bg-neutral-50 bottomcard" style={{ display: 'flex', flexDirection: 'column', borderRadius: '16px', border: '1px solid var(--color-neutral-400)'}}>
+      <article className="min-w-0 rounded-2xl border border-slate-200 bg-neutral-50 py-20 px-24 shadow-sm">
+        <div id="card3" className="bg-neutral-50 bottomcard" >
           
-          <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+          <div className="flex flex-row justify-between items-center">
             
-            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
-              <span className="bg-rose-500" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '8px', width: '40px', height: '40px', marginRight: '8px'}}>
+            <div className="flex flex-row items-center">
+              <span className="bg-rose-500 flex justify-center items-center rounded-lg w-40 h-40 mr-2" >
                 <img src={BreakfastIcon} alt="Breakfast" />
               </span>
-              <div className="text-rose-500 uppercase text-preset-6" >Breakfast</div>
+              <div className="text-rose-500 uppercase text-preset-6 pl-10" >Breakfast</div>
             </div>
               
-            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginLeft: '16px' }}>
-              
+            <div className="flex flex-row justify-between items-center ml-4">
               <div className="text-rose-500 uppercase text-preset-3">03</div>
             </div>
 
           </div>
 
-          <div id="card-details3" style={{ marginTop: '24px' }}>
+          <div id="card-details3" className="mt-24">
             <div>
               <div id="breakfast-info" className="text-neutral-900 text-preset-3">
                 Served 8 - 10:30
@@ -135,18 +129,16 @@ const Bottomcards: React.FC = () => {
                 On the terrace
               </small>
             </div>
-            <p id="instructions" className="text-neutral-700 text-preset-5" style={{ marginTop: '16px' }}>
+            <p id="instructions" className="text-neutral-700 text-preset-5 mt-16" >
               Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.
             </p>
 
           </div>
 
         </div>
-
-      </div>
-
-    </div>
-  );
+      </article>
+    </section>
+  )
 }
 
-export default Bottomcards;
+export default Bottomcards
