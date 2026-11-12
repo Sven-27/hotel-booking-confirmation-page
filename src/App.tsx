@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Confirmation from './components/confirmation/Confirmation'; // Added brackets if it's a named export
 import Sidebar from './components/sidebar/Sidebar'; // Removed the .tsx extension!
 import { Menu } from 'lucide-react'; // Clean hamburger line icon package
+import Bottomcards from './components/Bottomcards';
 
 export default function App(): React.JSX.Element {
   // Capitalized 'App' and used standard declaration
@@ -36,7 +37,7 @@ export default function App(): React.JSX.Element {
       <main className="flex-1 bg-white p-6 pt-20 md:pt-8 md:p-12 transition-all duration-300">
 
         <Confirmation />
-
+        <Bottomcards />
         {/* Rest of your main booking confirmation content goes here */}
       </main>
     </div>

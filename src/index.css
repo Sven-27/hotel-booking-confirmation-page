@@ -66,6 +66,7 @@
   --radius-20: 20px;
   --radius-24: 24px;
   --radius-full: 999px;
+
 }
 
 /* custom classes */
@@ -141,6 +142,7 @@
  .card{
   @apply w-[327px] sm:w-[340px] xl:w-[400px] h-[420px] shadow-xl p-20 rounded-xl;
  }
+
 }
 
 @layer utilities {
