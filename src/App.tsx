@@ -34,7 +34,7 @@ export default function App(): React.JSX.Element {
       {/* 2. Main content area on the right */}
       {/* 3. Main Screen Viewport Application Container Box */}
       {/* Adds top padding on mobile ('pt-20') so text clears the fixed mobile header bar */}
-      <main className="flex-1 bg-white p-6 pt-20 md:pt-8 md:p-12 transition-all duration-300">
+      <main className="flex-1 p-6 pt-20 md:pt-8 md:p-12 transition-all duration-300 bg-neutral-100">
 
         <Confirmation />
         <Bottomcards />

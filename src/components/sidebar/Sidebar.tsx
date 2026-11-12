@@ -31,8 +31,8 @@ export default function Sidebar({ isMobileOpen, onClose }: SidebarProps): React.
       {/* MASTER SIDEBAR WRAPPER PANEL */}
       <aside
         className={`
-                  w-[320px] sm:w-[384px] xl:w-[260px] bg-neutral-100 border-r border-neutral-200/50 flex flex-col min-h-screen shrink-0
-         fixed inset-y-0 left-0 z-50 transform transition-transform duration-300 ease-in-out px-spacing-24 py-spacing-16
+                  w-[320px] sm:w-[384px] xl:w-[260px] bg-neutral-200 border-r border-neutral-200/50 flex flex-col min-h-screen shrink-0
+         fixed inset-y-0 left-0 z-50 transform transition-transform duration-300 ease-in-out px-[16px] py-[20px]
          md:relative md:transform-none md:z-auto
           ${isMobileOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}
         `}
@@ -41,7 +41,7 @@ export default function Sidebar({ isMobileOpen, onClose }: SidebarProps): React.
         <SidebarHeader onClose={onClose} />
 
         {/* Dynamic Navigation Content Panel Area */}
-        <div className="flex flex-col flex-1 justify-between px-6 pt-4 pb-6 overflow-y-auto">
+        <div className="flex flex-col flex-1 justify-between px-6 pt-4 pb-6 overflow-y-auto border-t-1 border-dashed border-neutral-400 pt-[16px] mt-[20px]">
 
           {/* HARDCODED NAVIGATION MENU: Stripped of NavItem for fast Figma SVG implementation */}
           {/* DYNAMIC NAVIGATION MENU */}

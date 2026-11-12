@@ -9,7 +9,7 @@ function Bottomcards() {
   return (
     <section
       aria-label="Information cards"
-      className="mx-auto grid w-full max-w-5xl grid-cols-[repeat(auto-fit,minmax(min(100%,18rem),1fr))] gap-24 px-24 mt-40"
+      className="mx-auto grid w-full max-w-5xl grid-cols-[repeat(auto-fit,minmax(min(100%,18rem),1fr))] gap-24 px-24 mt-[var(--spacing-80)]"
     >
       <article className="min-w-0 rounded-2xl border border-slate-200 bg-neutral-50 py-20 px-24 shadow-sm">
         <div id="card1" className="bg-neutral-50" >
