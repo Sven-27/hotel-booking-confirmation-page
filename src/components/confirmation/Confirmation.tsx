@@ -1,7 +1,7 @@
 import ConfirmationHeader from './ConfirmationHeader';
 import ReceiptCard from './ReceiptCard';
 import WelcomeCard from './WelcomeCard';
-import Bottomcards from '../Bottomcards';
+// import Bottomcards from '../Bottomcards';
 
 const Confirmation: React.FC = () => {
   return (
