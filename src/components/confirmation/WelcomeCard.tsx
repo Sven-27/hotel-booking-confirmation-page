@@ -3,7 +3,7 @@ import React from 'react'
 const WelcomeCard: React.FC = () => {
   return (
     <div className="card rotate-[4deg] bg-[radial-gradient(circle_at_top_right,_#E07A3F_0%,_#C25A2E_30%,_#9F3E1D_90%)] animate-fan 
-            lg:group-hover:ml-[82px] lg:group-hover:rotate-[-4deg]">
+            lg:group-hover:ml-[82px] lg:group-hover:rotate-[-4deg] shadow-terracotta-400">
       <div className="flex justify-between">
         <small className="uppercase text-preset-5-medium text-sun-50 pt-3">Welcome card</small>
         <img src="src/assets/images/icon-sun.svg" className="mt-[15px]" /> 
