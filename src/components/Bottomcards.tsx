@@ -9,7 +9,7 @@ function Bottomcards() {
   return (
     <section
       aria-label="Information cards"
-      className="mx-auto grid w-full max-w-5xl grid-cols-[repeat(auto-fit,minmax(min(100%,18rem),1fr))] gap-24 px-24 mt-40"
+      className="mx-auto grid w-full grid-cols-[repeat(auto-fit,minmax(min(100%,18rem),1fr))] gap-24 px-24 mt-80"
     >
       <article className="min-w-0 rounded-2xl border border-slate-200 bg-neutral-50 py-20 px-24 shadow-sm">
         <div id="card1" className="bg-neutral-50" >
@@ -37,7 +37,7 @@ function Bottomcards() {
                 Sat, 25 April
               </small>
             </div>
-            <p id="instructions" className="text-neutral-700 text-preset-5 mt-16" >
+            <p id="instructions" className="text-neutral-700 text-preset-5-normal mt-16" >
                 Please ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
             </p>
 
@@ -74,11 +74,11 @@ function Bottomcards() {
             </div>
             <div id="wifi-instructions" className="mt-16">
             
-              <div id="wifi-info" className="mt-4 p-10 flex flex-row justify-between items-center bg-neutral-200 rounded-lg">
+              <div id="wifi-info" className="mt-4 p-10 flex flex-row justify-between items-center bg-neutral-200 rounded-lg h-40">
                  <div className="text-neutral-600 uppercase text-preset-8">Network</div>
                  <div className="text-neutral-900 text-preset-7">Le Soleil · Guest</div>
               </div>
-              <div id="pw-below" className="mt-2 p-10 flex flex-row justify-between items-center bg-neutral-200 rounded-lg">
+              <div id="pw-below" className="mt-2 p-10 flex flex-row justify-between items-center bg-neutral-200 rounded-lg h-40">
                 <div className="text-neutral-600 uppercase text-preset-8">Password</div>
                 <div className="flex flex-row justify-between items-center">
                   <div className="text-neutral-900 text-preset-7">soleil-2026</div>
@@ -129,7 +129,7 @@ function Bottomcards() {
                 On the terrace
               </small>
             </div>
-            <p id="instructions" className="text-neutral-700 text-preset-5 mt-16" >
+            <p id="instructions" className="text-neutral-700 text-preset-5-normal mt-16" >
               Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.
             </p>
 

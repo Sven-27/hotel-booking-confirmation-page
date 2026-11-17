@@ -4,7 +4,7 @@ import Confirmation from './components/confirmation/Confirmation'; // Added brac
 import Bottomcards from './components/Bottomcards';
 import Sidebar from './components/sidebar/Sidebar'; // Removed the .tsx extension!
 import { Menu } from 'lucide-react'; // Clean hamburger line icon package
-import Bottomcards from './components/Bottomcards';
+
 
 export default function App(): React.JSX.Element {
   // Capitalized 'App' and used standard declaration
