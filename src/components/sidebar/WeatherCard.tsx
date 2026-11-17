@@ -2,7 +2,7 @@ import type React from 'react';
 
 export default function WeatherCard(): React.JSX.Element {
   return (
-    <div className="relative overflow-hidden  rounded-2xl pt-3 pb-3.5 px-4">
+    <div className="relative overflow-hidden  rounded-2xl py-[12px] px-[16px] bg-sun-300">
       <img
         className="absolute -top-[20px] -right-[20px] w-[80px] h-[80px] max-w-none select-none pointer-events-none"
         src="src/assets/images/icon-weather.svg"
